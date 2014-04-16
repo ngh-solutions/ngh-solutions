@@ -1,0 +1,32 @@
+<h1>Editing iq_home</h1>
+
+<% form_for(@iq_home) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :sensor %><br />
+    <%= f.text_field :sensor %>
+  </p>
+  <p>
+    <%= f.label :sensor_adr %><br />
+    <%= f.text_field :sensor_adr %>
+  </p>
+  <p>
+    <%= f.label :aktor %><br />
+    <%= f.text_field :aktor %>
+  </p>
+  <p>
+    <%= f.label :aktor_adr %><br />
+    <%= f.text_field :aktor_adr %>
+  </p>
+  <p>
+    <%= f.label :func %><br />
+    <%= f.text_field :func %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @iq_home %> |
+<%= link_to 'Back', iq_homes_path %>

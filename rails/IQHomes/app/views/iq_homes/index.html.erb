@@ -1,0 +1,28 @@
+<h1>Listing iq_homes</h1>
+
+<table>
+  <tr>
+    <th>Sensor</th>
+    <th>Sensor adr</th>
+    <th>Aktor</th>
+    <th>Aktor adr</th>
+    <th>Func</th>
+  </tr>
+
+<% @iq_homes.each do |iq_home| %>
+  <tr>
+    <td><%=h iq_home.sensor %></td>
+    <td><%=h iq_home.sensor_adr %></td>
+    <td><%=h iq_home.aktor %></td>
+    <td><%=h iq_home.aktor_adr %></td>
+    <td><%=h iq_home.func %></td>
+    <td><%= link_to 'Show', iq_home %></td>
+    <td><%= link_to 'Edit', edit_iq_home_path(iq_home) %></td>
+    <td><%= link_to 'Destroy', iq_home, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New iq_home', new_iq_home_path %>

@@ -1,0 +1,2 @@
+module IQHomesHelper
+end

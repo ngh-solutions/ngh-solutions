@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sensor: MyString
+  sensor_adr: MyString
+  aktor: MyString
+  aktor_adr: MyString
+  func: MyString
+
+two:
+  sensor: MyString
+  sensor_adr: MyString
+  aktor: MyString
+  aktor_adr: MyString
+  func: MyString

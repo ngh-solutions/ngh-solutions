@@ -1,0 +1,28 @@
+<p>
+  <b>Firstname:</b>
+  <%=h @employee.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%=h @employee.lastname %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%=h @employee.birthday %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @employee.email %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @employee.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
